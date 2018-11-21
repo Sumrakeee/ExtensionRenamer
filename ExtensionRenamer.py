@@ -9,7 +9,7 @@ def main():
 		if i != 'Thumbs.db':
 			try:
 				os.rename(path + '\\' + i, path + '\\' + i.split('.')[0] + file_extension)
-				print(str(i) + '\t=====>\t' + i.split('.')[0] + file_extension)
+				print(i + '\t=====>\t' + i.split('.')[0] + file_extension)
 			except:
 				print('\nПереименование невозможно. Файл с этим именем уже находится в данной папке.\nУдаление файла...\n')
 				os.remove(path + '\\' + i)
